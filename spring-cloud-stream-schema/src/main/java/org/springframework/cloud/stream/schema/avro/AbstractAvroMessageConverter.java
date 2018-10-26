@@ -179,8 +179,8 @@ public abstract class AbstractAvroMessageConverter extends AbstractMessageConver
 			Schema schema = resolveSchemaForWriting(payload, headers, hintedContentType);
 			@SuppressWarnings("unchecked")
 			DatumWriter<Object> writer = getDatumWriter((Class<Object>) payload.getClass(), schema);
-			Encoder encoder = EncoderFactory.get().binaryEncoder(baos, null);
-			writer.write(payload, encoder);
+			Encoder
+				er);
 			encoder.flush();
 		}
 		catch (IOException e) {
